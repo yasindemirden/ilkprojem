@@ -10,6 +10,7 @@ namespace LessonsBasic
         [SerializeField] int tamSayi2 = 100;
         float ondalikSayi = 0.25f;
         bool dogruYanlis = true;
+        [SerializeField] private Vector3 ucFloat = new Vector3(1, 2, 3);
         // Start is called before the first frame update
         void Start()
         {
