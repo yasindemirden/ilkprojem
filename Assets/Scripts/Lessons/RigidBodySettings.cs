@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RigidBodySettings : MonoBehaviour
+namespace Lessons
 {
-    // Start is called before the first frame update
-    void Start()
+    [CreateAssetMenu(menuName = "Lessons/Lesson1/Control Rigidbody Settings")]
+    public class RigidBodySettings : ScriptableObject
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField] private Vector3 _jumpForce;
+        public Vector3 JumpForce { get { return _jumpForce; } }
     }
 }
